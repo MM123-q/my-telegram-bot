@@ -360,9 +360,9 @@ async def handle(request):
     return web.Response(text="Bot is running 24/7!")
 async def main():
     print("Бот с интерактивными заявками успешно запущен!")
-    async def main():
+        async def main():
     # --- ДОБАВЛЯЕМ ЭТОТ БЛОК ДЛЯ RENDER ---
-    app = web.Application()
+        app = web.Application()
     app.router.add_get("/", handle)
     runner = web.AppRunner(app)
     await runner.setup()
